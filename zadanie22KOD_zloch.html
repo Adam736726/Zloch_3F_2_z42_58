@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><body>
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 22 - Zloch</title>
+<script>
+function Pole_zloch(a_zlo,b_zlo){
+return a_zlo*b_zlo;
+}
+function Obw_zloch(a_zlo,b_zlo){
+return 2*(a_zlo+b_zlo);
+}
+function licz_zloch(){
+let a = parseFloat(document.getElementById("a_dana_zlo").value);
+let b = parseFloat(document.getElementById("b_dana_zlo").value);
+document.getElementById("pole_wpis").value = Pole_zloch(a,b);
+document.getElementById("obw_wpis").value = Obw_zloch(a,b);
+}
+</script>
+</head>
+<body>
+<h2>Prostokąt</h2>
+A: <input id="a_dana_zlo"><br><br>
+B: <input id="b_dana_zlo"><br><br>
+<button onclick="licz_zloch()">Oblicz</button>
+
+<table border="1">
+<tr><td>Pole</td><td><input id="pole_wpis"></td></tr>
+<tr><td>Obwód</td><td><input id="obw_wpis"></td></tr>
+</table>
+</body>
+</html>
+
+</textarea>
+</body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 16 - Zloch</title>
+</head>
+<body>
+<script>
+var A = parseInt(prompt("Podaj pierwszą liczbę A:", "1"));
+var B = parseInt(prompt("Podaj drugą liczbę B:", "2"));
+var wynik = Math.pow((A + B), 3);
+
+document.write("<div style='color:navy; font-size:40px;'>");
+document.write("Wczytane liczby: A=" + A + "&nbsp;&nbsp;&nbsp;B=" + B + "<br><br>");
+document.write("(" + A + " + " + B + ")^3 = " + A + "^3 + 3*(" + A + "^2)*" + B + " + 3*" + A + "*(" + B + "^2) + " + B + "^3 = ");
+document.write(Math.pow(A,3) + " + " + (3*A*A*B) + " + " + (3*A*B*B) + " + " + Math.pow(B,3) + " = " + wynik);
+document.write("</div>");
+</script>
+</body>
+</html>

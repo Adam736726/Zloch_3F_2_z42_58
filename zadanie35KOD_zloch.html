@@ -1,0 +1,36 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_zlo() { window.close() }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="zlo" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+</head>
+<body>
+ <div style="color:red; font-size:50px;">
+ <script language="JavaScript">
+ var x_zlo = prompt("Podaj liczbę x =", "");
+ var a_dana_zlo = parseFloat(x_zlo);
+ document.write("Wczytana liczba x = " + a_dana_zlo + "<br>");
+ if (a_dana_zlo > 0) {
+ document.write("Wczytana liczba jest większa od 0<br>");
+ } else if (a_dana_zlo == 0) {
+ document.write("Wczytana liczba jest równa 0<br>");
+ } else if (a_dana_zlo < 0) {
+ document.write("Wczytana liczba jest mniejsza od 0<br>");
+ }
+ </script>
+ </div>
+</body>
+</html>
+ </textarea>
+ </form>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_zlo()"/>
+</body>
+</html>

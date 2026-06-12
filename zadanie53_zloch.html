@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 53</title>
+</head>
+<body>
+
+    <h2>Zadanie 53 - Adam Zloch 31</h2>
+    <div id="wynik" style="font-family: monospace; font-size: 20px;"></div>
+
+    <script>
+        let ileRazy = parseInt(prompt("ile razy powtórzyć=", "5"));
+        let inicjaly = prompt("podaj twoje inicjały=", "AZ");
+        let tekst = "";
+
+        for (let i = 1; i <= ileRazy; i++) {
+            for (let j = 1; j < i; j++) {
+                tekst += "&nbsp;&nbsp;&nbsp;";
+            }
+            tekst += i + "_" + inicjaly + "_" + i + "<br>";
+        }
+
+        document.getElementById("wynik").innerHTML = tekst;
+    </script>
+
+</body>
+</html>

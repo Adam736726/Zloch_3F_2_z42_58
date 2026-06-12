@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 32 KOD</title>
+</head>
+<body>
+
+<h1>KOD – Zadanie 32</h1>
+
+<textarea cols="100" rows="30">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 32</title>
+
+<script>
+
+function Wiezowiec(miasto,pietra,wysokosc,rok)
+{
+this.miasto=miasto;
+this.pietra=pietra;
+this.wysokosc=wysokosc;
+this.rok=rok;
+}
+
+Wiezowiec.prototype.wyswietl = function ()
+{
+document.write(this.miasto + " " + this.pietra + " " + this.wysokosc + " " + this.rok + "<br>");
+};
+
+var obiekt1 = new Wiezowiec("Warszawa",50,"200m",2020);
+var obiekt2 = new Wiezowiec("Krakow",40,"180m",2018);
+var obiekt3 = new Wiezowiec("Gdansk",35,"150m",2015);
+
+obiekt1.wyswietl();
+obiekt2.wyswietl();
+obiekt3.wyswietl();
+
+</script>
+
+</head>
+<body>
+Programowanie obiektowe – konstruktor i prototype
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 29</title>
+</head>
+<body>
+
+<h1>Zadanie 29</h1>
+
+<h2>1. Jak określić właściwość obiektu?</h2>
+<p>
+Sposób 1:<br>
+obiekt.wlasciwosc = wartosc;<br>
+np. auto.marka="Opel";
+</p>
+
+<p>
+Sposób 2:<br>
+obiekt["wlasciwosc"] = wartosc;<br>
+np. auto["rok"]=2020;
+</p>
+
+<h2>2. Jak odwołać się do pól i metod?</h2>
+<p>
+Poprzez nazwę obiektu i kropkę.<br>
+np. samochod.kolor<br>
+np. samochod.pokaz()
+</p>
+
+<h2>3. Cechy konstruktora</h2>
+<p>
+Uruchamia się podczas tworzenia obiektu<br>
+Ma nazwę jak klasa<br>
+Nie zwraca wartości<br>
+Może przyjmować argumenty
+</p>
+
+<h2>4. Przykład obiektu</h2>
+<pre>
+var osoba = {
+nazwisko:'Kowalski',
+imie:'Jan',
+zawod:'piekarz',
+wyswietl:function(){
+document.write(this.nazwisko + " " + this.imie);
+}
+}
+</pre>
+
+<h2>5. Znaczenie this</h2>
+<p>
+this odnosi się do aktualnego obiektu.
+</p>
+
+<h2>6. Konstruktor w JS</h2>
+<pre>
+function klient(nazwisko,imie,zawod){
+this.nazwisko=nazwisko;
+this.imie=imie;
+this.zawod=zawod;
+}
+</pre>
+
+<h2>7. Słowo new</h2>
+<pre>
+var osoba1 = new klient("Kowalski","Jan","kierowca");
+</pre>
+
+<h2>8. Prototype</h2>
+<p>
+Prototype pozwala dodawać nowe metody i właściwości do obiektów.
+</p>
+
+</body>
+</html>

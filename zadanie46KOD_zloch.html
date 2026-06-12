@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 46</title>
+</head>
+<body>
+    <button onclick="wybierzPetle()">Zloch-Zadanie46</button>
+    <button onclick="alert(wybierzPetle.toString())">Zloch-Zadanie46-KOD</button>
+
+    <div id="w"></div>
+    <script>
+        function wybierzPetle() {
+            const koniec_petli_zlo = 11;
+            let d = document.getElementById('w');
+            
+            d.innerHTML = "ilość wykonania pętli = 11<br>wielkość liter = 42px<hr>";
+
+            for (let i_z = 1; i_z <= koniec_petli_zlo; i_z++) {
+                if (i_z % 2 !== 0) {
+                    d.innerHTML += "<div style='font-size:42px;'>Zloch</div>";
+                } else {
+                    d.innerHTML += "<div style='font-size:42px;'>Adam</div>";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

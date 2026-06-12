@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 23 - Zloch</title>
+<script>
+function licz(){
+let D=parseFloat(document.getElementById("d_zlo").value);
+let X=parseFloat(document.getElementById("x_zlo").value);
+let L=Math.sqrt(D*D+X*X);
+let kat=Math.atan(D/X)*180/Math.PI;
+document.getElementById("wynik_L").value=L.toFixed(2);
+document.getElementById("wynik_kat").value=kat.toFixed(2);
+}
+</script>
+</head>
+<body>
+<h3>Drabina</h3>
+D: <input id="d_zlo"><br><br>
+X: <input id="x_zlo"><br><br>
+<button onclick="licz()">Oblicz</button>
+
+<table border="1">
+<tr><td>Długość</td><td><input id="wynik_L"></td></tr>
+<tr><td>Kąt</td><td><input id="wynik_kat"></td></tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 12 - Zloch</title>
+</head>
+<body>
+<script>
+var D1_zlo = parseInt(prompt("Podaj pierwszy dzień stycznia:", "30"));
+var G1_zlo = parseInt(prompt("Podaj godzinę pierwszego dnia:", "4"));
+var D2_zlo = parseInt(prompt("Podaj drugi dzień stycznia:", "28"));
+var G2_zlo = parseInt(prompt("Podaj godzinę drugiego dnia:", "22"));
+
+var sekundy = Math.abs(((D1_zlo * 24 + G1_zlo) - (D2_zlo * 24 + G2_zlo)) * 3600);
+
+document.write("<p style='color:green; font-size:" + (30 + 15) + "px;'>");
+document.write("Ilość sekund = " + sekundy + " sekund</p>");
+</script>
+</body>
+</html>
