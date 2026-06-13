@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 57 - Adam Zloch 31</title>
+</head>
+<body>
+
+    <h2>Zadanie 57 - Adam Zloch 31</h2>
+
+    <script>
+        let l1_t_zlo, l2_t_zlo;
+
+        do {
+            l1_t_zlo = parseInt(prompt("Podaj pierwszą liczbę (20-60):"));
+            if (l1_t_zlo < 20 || l1_t_zlo > 60 || isNaN(l1_t_zlo)) {
+                alert("liczba l1 nie należy do przedziału <20,60>");
+            }
+        } while (l1_t_zlo < 20 || l1_t_zlo > 60 || isNaN(l1_t_zlo));
+
+        do {
+            l2_t_zlo = parseInt(prompt("Podaj drugą liczbę (20-60):"));
+            if (l2_t_zlo < 20 || l2_t_zlo > 60 || isNaN(l2_t_zlo)) {
+                alert("liczba l2 nie należy do przedziału <20,60>");
+            }
+        } while (l2_t_zlo < 20 || l2_t_zlo > 60 || isNaN(l2_t_zlo));
+
+        let pocz_zlo = parseInt(prompt("Podaj wartość początkową wielkości tekstu:"));
+        let tekst_zlo = prompt("Podaj dowolny tekst:");
+
+        if (l1_t_zlo < l2_t_zlo) {
+            for (let i = pocz_zlo; ; i += 5) {
+                if (i > 100) break;
+                document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_zlo + "<br></p>");
+            }
+        } else if (l2_t_zlo < l1_t_zlo) {
+            for (let i = pocz_zlo; ; i -= 5) {
+                if (i < 0) break;
+                document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_zlo + "<br></p>");
+            }
+        } else if (l2_t_zlo === l1_t_zlo) {
+            document.write("<p style=\"font-size:" + pocz_zlo + "px; color: black;\"><br>" + tekst_zlo + "<br></p>");
+        }
+    </script>
+
+</body>
+</html>
